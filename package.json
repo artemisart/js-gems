@@ -1,0 +1,20 @@
+{
+  "name": "js-gems",
+  "version": "0.1.0",
+  "description": "Because it's awesome",
+  "main": "README.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artemisart/js-gems.git"
+  },
+  "author": "artemisart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artemisart/js-gems/issues"
+  },
+  "homepage": "https://github.com/artemisart/js-gems#readme"
+}
