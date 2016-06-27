@@ -39,9 +39,9 @@ for (let file of fs.readdirSync("gems")) {
         sandbox.stdout = ""
         let result = vm.runInContext(code, sandbox)
         if (sandbox.stdout)
-            console.log("```\n" + sandbox.stdout + "\n```")
+            console.log("```\n" + sandbox.stdout.trim("\n") + "\n```")
         if (i++ && result)
-            console.log("```js\n" + util.inspect(result) + "\n```")
+            console.log("```js\n> " + util.inspect(result) + "\n```")
     }
 }
 
