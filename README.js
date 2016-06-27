@@ -5,7 +5,11 @@ var util = require("util");
 var re = /((?:\/\/.*\n*)*)([^]+?)(?=\/\/|$)/g;
 // README introduction
 console.log("#js-gems\nBecause it's awesome...");
-// TODO ToC
+var i = 0;
+for (var _i = 0, gems_1 = gems; _i < gems_1.length; _i++) {
+    var file = gems_1[_i];
+    console.log(++i + ". " + file.replace(/-/g, " ").replace(/\.js$/, ""));
+}
 // foreach gem
 for (var _i = 0, _a = fs.readdirSync("gems"); _i < _a.length; _i++) {
     var file = _a[_i];

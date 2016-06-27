@@ -9,7 +9,10 @@ console.log(
     `#js-gems
 Because it's awesome...`)
 
-// TODO ToC
+let i = 0
+for (let file of gems) {
+    console.log(`${++i}. ${file.replace(/-/g, " ").replace(/\.js$/, "")}`)
+}
 
 // foreach gem
 for (let file of fs.readdirSync("gems")) {

@@ -1,6 +1,12 @@
 #js-gems
 Because it's awesome...
 
+Gems :
+1. magic default parameters
+2. object iterator
+3. select many
+4. select
+
 ## Magic default parameters
 
 Allows objects as default parameters, and merge the default obj with the one the user provides :
