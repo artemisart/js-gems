@@ -6,12 +6,12 @@ fs.watch("README.js", debounce);
 fs.watch("gems", debounce);
 var timer;
 function debounce(event, filename) {
-    log(event, filename);
+    // log(event, filename)
     clearTimeout(timer);
     timer = setTimeout(rebuild, 50);
 }
 function rebuild() {
-    log("rebuild");
+    log("rebuild README.md");
     try {
         cp.execSync("node README.js > README.md");
     }

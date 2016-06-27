@@ -7,13 +7,13 @@ fs.watch("gems", debounce)
 
 let timer
 function debounce(event, filename) {
-    log(event, filename)
+    // log(event, filename)
     clearTimeout(timer)
     timer = setTimeout(rebuild, 50)
 }
 
 function rebuild() {
-    log("rebuild")
+    log("rebuild README.md")
     try {
         cp.execSync("node README.js > README.md")
     } catch (error) {
