@@ -1,13 +1,18 @@
+// Generates README file
+
 import fs = require("fs")
 import vm = require("vm")
 import util = require("util")
 
 const re = /((?:\/\/.*\n*)*)([^]+?)(?=\/\/|$)/g
+const gems = fs.readdirSync("gems")
 
 // README introduction
 console.log(
     `#js-gems
-Because it's awesome...`)
+Because it's awesome...
+
+Gems :`)
 
 let i = 0
 for (let file of gems) {
@@ -15,8 +20,8 @@ for (let file of gems) {
 }
 
 // foreach gem
-for (let file of fs.readdirSync("gems")) {
-    let name = file.split(".")[0] // TODO remove only after last dot
+for (let file of gems) {
+    let name = file.replace(/\.js$/, "")
     let title = name[0].toUpperCase() + name.slice(1).replace(/-/g, " ")
     let content = fs.readFileSync(`gems/${file}`).toString()
 
