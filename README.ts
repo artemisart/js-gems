@@ -31,7 +31,7 @@ for (let file of fs.readdirSync("gems")) {
         let [_, text, code] = m
 
         // intro text or explanation
-        console.log(text.trim().replace(/^\/\/\s*/gm, "\n"))
+        console.log((i ? "\n- " : "") + text.replace(/^\/\/\s*/gm, "\n").trim())
         // show code
         console.log("```js\n" + code.trim() + "\n```")
 
