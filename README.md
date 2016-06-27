@@ -9,7 +9,7 @@ Gems :
 
 ## Magic default parameters
 
-Allows objects as default parameters, and merge the default obj with the one the user provides :
+Allows objects as default parameters, and merge the default obj with the one the user provides
 ```js
 function extendedDefault(
     myParam = {
@@ -26,11 +26,13 @@ function extendedDefault(
             if (myParam[opt] === undefined)
                 myParam[opt] = defaultParam[opt]	
     }
+
+    /* do what you want here... */
     return myParam
 }
 ```
 
-- Here only `theAnswer` property is changed :
+- Here only `theAnswer` property is changed
 ```js
 extendedDefault({
     theAnswer: 42
@@ -40,7 +42,7 @@ extendedDefault({
 > { theAnswer: 42, hello: 'world', awesome: true }
 ```
 
-- But without that gem, the default parameter would be completely replaced :
+- But without that gem, the default parameter would be completely replaced
 ```js
 function es2015default(p = { a: 1, b: 2 }) { return p }
 es2015default({a: 'b ! where are you ?'})
