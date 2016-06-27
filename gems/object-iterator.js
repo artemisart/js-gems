@@ -17,7 +17,6 @@ let data = {
 for (let [key, value] of data)
 	console.log(key, value)
 
-// Example
 // And also with the spread operator
 
-console.log([...data])
+[...data]
