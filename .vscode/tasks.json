@@ -2,10 +2,14 @@
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "0.1.0",
-    "command": "tsc",
+    "command": "sh",
+    "windows": {
+        "command": "cmd",
+        "args": [ "/c", "start /b tsc -w -p . & node watch.js" ]
+    },
     "isShellCommand": true,
-    "args": ["-w", "-p", "."],
-    "showOutput": "silent",
+    "args": [ "-c", "tsc -w -p . & node watch.js" ],
+    "showOutput": "always",
     "isWatching": true,
     "problemMatcher": "$tsc-watch"
 }
