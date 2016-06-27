@@ -6,7 +6,6 @@ Object.prototype[Symbol.iterator] = function* () {
 	}
 }
 
-// Example
 // Iterating works with 'for ... of'
 
 let data = {
