@@ -1,4 +1,4 @@
-// Allows object as default parameters, and merge the default obj with the one the user provides
+// Allows objects as default parameters, and merge the default obj with the one the user provides :
 
 function extendedDefault(
     myParam = {
@@ -18,12 +18,13 @@ function extendedDefault(
     return myParam
 }
 
-// Example
+// Here only `theAnswer` property is changed :
+
 extendedDefault({
     theAnswer: 42
 })
 
-// Without that gem, the default parameter is completely replaced :
+// But without that gem, the default parameter would be completely replaced :
 
 function es2015default(p = { a: 1, b: 2 }) { return p }
 es2015default({a: 'b ! where are you ?'})
