@@ -12,11 +12,13 @@ console.log(
     `#js-gems
 Because it's awesome...
 
-Gems :`)
+Gems :
+`)
 
 let i = 0
 for (let file of gems) {
-    console.log(`${++i}. ${file.replace(/-/g, " ").replace(/\.js$/, "")}`)
+    let name = file.replace(/\.js$/, "")
+    console.log(`${++i}. [${name.replace(/-/g, " ")}](${name})`)
 }
 
 // foreach gem

@@ -6,17 +6,18 @@ var util = require("util");
 var re = /((?:\/\/.*\n*)*)([^]+?)(?=\/\/|$)/g;
 var gems = fs.readdirSync("gems");
 // README introduction
-console.log("#js-gems\nBecause it's awesome...\n\nGems :");
+console.log("#js-gems\nBecause it's awesome...\n\nGems :\n");
 var i = 0;
 for (var _i = 0, gems_1 = gems; _i < gems_1.length; _i++) {
     var file = gems_1[_i];
-    console.log(++i + ". " + file.replace(/-/g, " ").replace(/\.js$/, ""));
+    var name_1 = file.replace(/\.js$/, "");
+    console.log(++i + ". [" + name_1.replace(/-/g, " ") + "](" + name_1 + ")");
 }
 // foreach gem
 for (var _a = 0, gems_2 = gems; _a < gems_2.length; _a++) {
     var file = gems_2[_a];
-    var name_1 = file.replace(/\.js$/, "");
-    var title = name_1[0].toUpperCase() + name_1.slice(1).replace(/-/g, " ");
+    var name_2 = file.replace(/\.js$/, "");
+    var title = name_2[0].toUpperCase() + name_2.slice(1).replace(/-/g, " ");
     var content = fs.readFileSync("gems/" + file).toString();
     // gem title
     console.log("\n## " + title + "\n");
