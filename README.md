@@ -3,10 +3,10 @@ Because it's awesome...
 
 Gems :
 
-1. [magic default parameters](magic-default-parameters)
-2. [object iterator](object-iterator)
-3. [select many](select-many)
-4. [select](select)
+1. [magic default parameters](#magic-default-parameters)
+2. [object iterator](#object-iterator)
+3. [select many](#select-many)
+4. [select](#select)
 
 ## Magic default parameters
 

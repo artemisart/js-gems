@@ -11,7 +11,7 @@ var i = 0;
 for (var _i = 0, gems_1 = gems; _i < gems_1.length; _i++) {
     var file = gems_1[_i];
     var name_1 = file.replace(/\.js$/, "");
-    console.log(++i + ". [" + name_1.replace(/-/g, " ") + "](" + name_1 + ")");
+    console.log(++i + ". [" + name_1.replace(/-/g, " ") + "](#" + name_1 + ")");
 }
 // foreach gem
 for (var _a = 0, gems_2 = gems; _a < gems_2.length; _a++) {

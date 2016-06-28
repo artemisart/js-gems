@@ -18,7 +18,7 @@ Gems :
 let i = 0
 for (let file of gems) {
     let name = file.replace(/\.js$/, "")
-    console.log(`${++i}. [${name.replace(/-/g, " ")}](${name})`)
+    console.log(`${++i}. [${name.replace(/-/g, " ")}](#${name})`)
 }
 
 // foreach gem
