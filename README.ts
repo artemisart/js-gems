@@ -55,6 +55,12 @@ for (let file of gems) {
     }
 }
 
+console.log(`# How to build ? (generate this README from gems)
+
+- VS Code : <kbd>Ctrl+Shift+B</kbd>
+- sh : \`tsc -w -p . & node watch.js\`
+- win : use 2 shells or \`start tsc -w -p . & node watch.js\``)
+
 function debug(obj) {
     let str = util.inspect(obj, { colors: true })
     console.log(str.replace(/\\n/g, "\n").replace(/\\t/g, "\t"))

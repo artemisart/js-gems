@@ -107,3 +107,8 @@ function* select(iterable, callback, thisArg) {
 		yield callback.call(thisArg, value, index++, iterable)
 }
 ```
+# How to build ? (generate this README from gems)
+
+- VS Code : <kbd>Ctrl+Shift+B</kbd>
+- sh : `tsc -w -p . & node watch.js`
+- win : use 2 shells or `start tsc -w -p . & node watch.js`
