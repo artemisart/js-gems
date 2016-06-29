@@ -111,4 +111,4 @@ function* select(iterable, callback, thisArg) {
 To generate this README from gems :
 - VS Code : <kbd>Ctrl+Shift+B</kbd>
 - sh : `tsc -w -p . & node watch.js`
-- win : use 2 shells or `start /b tsc -w -p . & node watch.js`
+- win : use 2 shells or `start /b tsc -w -p . & node watch.js`. Or just go for babun/win10-linux/git-bash/cygwin/...
