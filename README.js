@@ -3,7 +3,7 @@
 var fs = require("fs");
 var vm = require("vm");
 var util = require("util");
-var re = /((?:\/\/.*\n*)*)([^]+?)(?=\/\/|$)/g;
+var re = /((?:\/\/.*\n*)+)((?:.*\n?)+?)(?=\/\/|$)/g;
 var gems = fs.readdirSync("gems");
 // README introduction
 console.log("#js-gems\nBecause it's awesome...\n\nGems :\n");

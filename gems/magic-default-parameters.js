@@ -16,7 +16,7 @@ function extendedDefault(
                 myParam[opt] = defaultParam[opt]	
     }
 
-    /* do what you want here... */
+    // do what you want here...
     return myParam
 }
 

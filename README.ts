@@ -4,7 +4,7 @@ import fs = require("fs")
 import vm = require("vm")
 import util = require("util")
 
-const re = /((?:\/\/.*\n*)*)([^]+?)(?=\/\/|$)/g
+const re = /((?:\/\/.*\n*)+)((?:.*\n?)+?)(?=\/\/|$)/g
 const gems = fs.readdirSync("gems")
 
 // README introduction
