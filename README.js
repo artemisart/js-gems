@@ -41,7 +41,7 @@ for (var _a = 0, gems_2 = gems; _a < gems_2.length; _a++) {
             console.log("```js\n> " + util.inspect(result) + "\n```");
     }
 }
-console.log("# How to build ? (generate this README from gems)\n\n- VS Code : <kbd>Ctrl+Shift+B</kbd>\n- sh : `tsc -w -p . & node watch.js`\n- win : use 2 shells or `start tsc -w -p . & node watch.js`");
+console.log("# How to build ? (generate this README from gems)\n\n- VS Code : <kbd>Ctrl+Shift+B</kbd>\n- sh : `tsc -w -p . & node watch.js`\n- win : use 2 shells or `start /b tsc -w -p . & node watch.js`");
 function debug(obj) {
     var str = util.inspect(obj, { colors: true });
     console.log(str.replace(/\\n/g, "\n").replace(/\\t/g, "\t"));

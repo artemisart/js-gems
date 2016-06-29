@@ -111,4 +111,4 @@ function* select(iterable, callback, thisArg) {
 
 - VS Code : <kbd>Ctrl+Shift+B</kbd>
 - sh : `tsc -w -p . & node watch.js`
-- win : use 2 shells or `start tsc -w -p . & node watch.js`
+- win : use 2 shells or `start /b tsc -w -p . & node watch.js`
